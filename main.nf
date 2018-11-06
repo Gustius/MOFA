@@ -66,9 +66,9 @@ process mofa {
   library(MOFAtools)
   library(magrittr)
 
-  GEdata <- read.csv("/home/gust/Desktop/project/test_MOFA/NormCountsElisabeth_OT2AVG.csv", row.names=1, comment.char="" , colClasses=c("character",rep("numeric",9)), strip.white=FALSE)
-  MetabData <- read.csv("/home/gust/Desktop/project/test_MOFA/Metabolomics_transposed.csv", row.names=1, comment.char="" , colClasses=c("character",rep("numeric",9)), strip.white=FALSE)
-  ProteomicsData <- read.csv("/home/gust/Desktop/project/test_MOFA/Proteomics_massaged_reordered.csv", row.names=1, comment.char="", colClasses=c("character",rep("numeric",9)), strip.white=FALSE)
+  GEdata <- read.csv("NormCountsElisabeth_OT2AVG.csv", row.names=1, comment.char="" , colClasses=c("character",rep("numeric",9)), strip.white=FALSE)
+  MetabData <- read.csv("Metabolomics_transposed.csv", row.names=1, comment.char="" , colClasses=c("character",rep("numeric",9)), strip.white=FALSE)
+  ProteomicsData <- read.csv("Proteomics_massaged_reordered.csv", row.names=1, comment.char="", colClasses=c("character",rep("numeric",9)), strip.white=FALSE)
 
   MATS <- list (GEdata, MetabData, ProteomicsData)
   names(MATS) <- c("GEdata", "MetabData", "ProteomicsData")
@@ -127,3 +127,4 @@ process mofa {
 mofa.subscribe {
   println it.trim()
 }
+
