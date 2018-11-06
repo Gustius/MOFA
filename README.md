@@ -1,5 +1,5 @@
 # nf-core/mofapipeline
-**This pipeline is a first attempt at creating a pipeline for MOFA using nf-core.**
+**This pipeline is a first attempt at creating a nf-core pipeline using the MOFA-package.**
 
 [![Build Status](https://travis-ci.org/nf-core/mofapipeline.svg?branch=master)](https://travis-ci.org/nf-core/mofapipeline)
 [![Nextflow](https://img.shields.io/badge/nextflow-%E2%89%A50.32.0-brightgreen.svg)](https://www.nextflow.io/)
